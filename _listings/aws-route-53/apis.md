@@ -26,8 +26,8 @@ x-alexaRank: ""
 tags:
 - DNS
 - Amazon Web Services
-created: "2018-03-10"
-modified: "2018-03-10"
+created: "2018-03-21"
+modified: "2018-03-21"
 url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-route-53/master/_listings/aws-route-53/apis.yaml
 specificationVersion: "0.14"
 apis:
