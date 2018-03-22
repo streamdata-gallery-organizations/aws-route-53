@@ -20,7 +20,8 @@ paths:
         200:
           description: OK
       tags:
-      - health checks
+      - checks
+      - health
 definitions: []
 x-collection-name: AWS Route 53
 x-streamrank:
