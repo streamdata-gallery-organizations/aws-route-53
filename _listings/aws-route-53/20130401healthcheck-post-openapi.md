@@ -133,7 +133,7 @@ paths:
       parameters:
       - in: body
         name: ChangeBatch
-        description: "A complex type that contains an optional comment and the Changes\t\t\telement"
+        description: A complex type that contains an optional comment and the Changeselement
         schema:
           $ref: '#/definitions/holder'
       - in: body
@@ -143,8 +143,8 @@ paths:
           $ref: '#/definitions/holder'
       - in: path
         name: Id
-        description: "The ID of the hosted zone that contains the resource record
-          sets that you want to\t\t\tchange"
+        description: The ID of the hosted zone that contains the resource record sets
+          that you want tochange
         type: string
       responses:
         200:
@@ -162,9 +162,9 @@ paths:
       parameters:
       - in: body
         name: AddTags
-        description: "A complex type that contains a list of the tags that you want
-          to add to the specified\t\t\thealth check or hosted zone and/or the tags
-          for which you want to edit the Value\t\t\telement"
+        description: A complex type that contains a list of the tags that you want
+          to add to the specifiedhealth check or hosted zone and/or the tags for which
+          you want to edit the Valueelement
         schema:
           $ref: '#/definitions/holder'
       - in: body
@@ -174,8 +174,8 @@ paths:
           $ref: '#/definitions/holder'
       - in: body
         name: RemoveTagKeys
-        description: "A complex type that contains a list of the tags that you want
-          to delete from the\t\t\tspecified health check or hosted zone"
+        description: A complex type that contains a list of the tags that you want
+          to delete from thespecified health check or hosted zone
         schema:
           $ref: '#/definitions/holder'
       - in: path
@@ -219,9 +219,8 @@ paths:
       parameters:
       - in: body
         name: CallerReference
-        description: "A unique string that identifies the request and that allows
-          failed\t\t\t\tCreateHealthCheck requests to be retried without the risk
-          of executing the\t\t\toperation twice"
+        description: A unique string that identifies the request and that allows failedCreateHealthCheck
+          requests to be retried without the risk of executing theoperation twice
         schema:
           $ref: '#/definitions/holder'
       - in: body

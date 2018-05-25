@@ -160,7 +160,7 @@ paths:
       parameters:
       - in: body
         name: ChangeBatch
-        description: "A complex type that contains an optional comment and the Changes\t\t\telement"
+        description: A complex type that contains an optional comment and the Changeselement
         schema:
           $ref: '#/definitions/holder'
       - in: body
@@ -170,8 +170,8 @@ paths:
           $ref: '#/definitions/holder'
       - in: path
         name: Id
-        description: "The ID of the hosted zone that contains the resource record
-          sets that you want to\t\t\tchange"
+        description: The ID of the hosted zone that contains the resource record sets
+          that you want tochange
         type: string
       responses:
         200:

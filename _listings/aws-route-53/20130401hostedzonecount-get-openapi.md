@@ -114,7 +114,7 @@ paths:
       parameters:
       - in: body
         name: ChangeBatch
-        description: "A complex type that contains an optional comment and the Changes\t\t\telement"
+        description: A complex type that contains an optional comment and the Changeselement
         schema:
           $ref: '#/definitions/holder'
       - in: body
@@ -124,8 +124,8 @@ paths:
           $ref: '#/definitions/holder'
       - in: path
         name: Id
-        description: "The ID of the hosted zone that contains the resource record
-          sets that you want to\t\t\tchange"
+        description: The ID of the hosted zone that contains the resource record sets
+          that you want tochange
         type: string
       responses:
         200:
@@ -143,9 +143,9 @@ paths:
       parameters:
       - in: body
         name: AddTags
-        description: "A complex type that contains a list of the tags that you want
-          to add to the specified\t\t\thealth check or hosted zone and/or the tags
-          for which you want to edit the Value\t\t\telement"
+        description: A complex type that contains a list of the tags that you want
+          to add to the specifiedhealth check or hosted zone and/or the tags for which
+          you want to edit the Valueelement
         schema:
           $ref: '#/definitions/holder'
       - in: body
@@ -155,8 +155,8 @@ paths:
           $ref: '#/definitions/holder'
       - in: body
         name: RemoveTagKeys
-        description: "A complex type that contains a list of the tags that you want
-          to delete from the\t\t\tspecified health check or hosted zone"
+        description: A complex type that contains a list of the tags that you want
+          to delete from thespecified health check or hosted zone
         schema:
           $ref: '#/definitions/holder'
       - in: path
@@ -200,9 +200,8 @@ paths:
       parameters:
       - in: body
         name: CallerReference
-        description: "A unique string that identifies the request and that allows
-          failed\t\t\t\tCreateHealthCheck requests to be retried without the risk
-          of executing the\t\t\toperation twice"
+        description: A unique string that identifies the request and that allows failedCreateHealthCheck
+          requests to be retried without the risk of executing theoperation twice
         schema:
           $ref: '#/definitions/holder'
       - in: body
@@ -252,9 +251,8 @@ paths:
       parameters:
       - in: body
         name: CallerReference
-        description: "A unique string that identifies the request and that allows
-          failed\t\t\tCreateHostedZone requests to be retried without the risk of
-          executing the\t\t\toperation twice"
+        description: A unique string that identifies the request and that allows failedCreateHostedZone
+          requests to be retried without the risk of executing theoperation twice
         schema:
           $ref: '#/definitions/holder'
       - in: body
@@ -269,9 +267,9 @@ paths:
           $ref: '#/definitions/holder'
       - in: body
         name: DelegationSetId
-        description: "If you want to associate a reusable delegation set with this
-          hosted zone, the ID that\t\t\tAmazon Route 53 assigned to the reusable delegation
-          set when you created it"
+        description: If you want to associate a reusable delegation set with this
+          hosted zone, the ID thatAmazon Route 53 assigned to the reusable delegation
+          set when you created it
         schema:
           $ref: '#/definitions/holder'
       - in: body
@@ -317,9 +315,9 @@ paths:
       parameters:
       - in: body
         name: CallerReference
-        description: "A unique string that identifies the request, and that allows
-          you to retry failed\t\t\t\tCreateReusableDelegationSet requests without
-          the risk of executing the\t\t\toperation twice"
+        description: A unique string that identifies the request, and that allows
+          you to retry failedCreateReusableDelegationSet requests without the risk
+          of executing theoperation twice
         schema:
           $ref: '#/definitions/holder'
       - in: body
@@ -329,8 +327,8 @@ paths:
           $ref: '#/definitions/holder'
       - in: body
         name: HostedZoneId
-        description: "If you want to mark the delegation set for an existing hosted
-          zone as reusable, the ID\t\t\tfor that hosted zone"
+        description: If you want to mark the delegation set for an existing hosted
+          zone as reusable, the IDfor that hosted zone
         schema:
           $ref: '#/definitions/holder'
       responses:
@@ -398,9 +396,8 @@ paths:
           $ref: '#/definitions/holder'
       - in: body
         name: HostedZoneId
-        description: "The ID of the hosted zone in which you want Amazon Route 53
-          to create resource record sets by\t\t\tusing the configuration in a traffic
-          policy"
+        description: The ID of the hosted zone in which you want Amazon Route 53 to
+          create resource record sets byusing the configuration in a traffic policy
         schema:
           $ref: '#/definitions/holder'
       - in: body
@@ -410,21 +407,20 @@ paths:
           $ref: '#/definitions/holder'
       - in: body
         name: TrafficPolicyId
-        description: "The ID of the traffic policy that you want to use to create
-          resource record sets in the\t\t\tspecified hosted zone"
+        description: The ID of the traffic policy that you want to use to create resource
+          record sets in thespecified hosted zone
         schema:
           $ref: '#/definitions/holder'
       - in: body
         name: TrafficPolicyVersion
-        description: "The version of the traffic policy that you want to use to create
-          resource record sets\t\t\tin the specified hosted zone"
+        description: The version of the traffic policy that you want to use to create
+          resource record setsin the specified hosted zone
         schema:
           $ref: '#/definitions/holder'
       - in: body
         name: TTL
-        description: "(Optional) The TTL that you want Amazon Route 53 to assign to
-          all of the resource record sets\t\t\tthat it creates in the specified hosted
-          zone"
+        description: (Optional) The TTL that you want Amazon Route 53 to assign to
+          all of the resource record setsthat it creates in the specified hosted zone
         schema:
           $ref: '#/definitions/holder'
       responses:
@@ -451,8 +447,8 @@ paths:
       parameters:
       - in: body
         name: Comment
-        description: "The comment that you specified in the CreateTrafficPolicyVersion
-          request,\t\t\tif any"
+        description: The comment that you specified in the CreateTrafficPolicyVersion
+          request,if any
         schema:
           $ref: '#/definitions/holder'
       - in: body
@@ -506,8 +502,8 @@ paths:
         type: string
       - in: body
         name: VPC
-        description: "A complex type that contains the VPC ID and region for the VPC
-          that you want to authorize associating \t\t\twith your hosted zone"
+        description: A complex type that contains the VPC ID and region for the VPC
+          that you want to authorize associating with your hosted zone
         schema:
           $ref: '#/definitions/holder'
       responses:
@@ -592,8 +588,8 @@ paths:
       parameters:
       - in: path
         name: Id
-        description: "The ID of the hosted zone for which you want to get a list of
-          the name servers in the\t\t\tdelegation set"
+        description: The ID of the hosted zone for which you want to get a list of
+          the name servers in thedelegation set
         type: string
       responses:
         200:
@@ -682,15 +678,15 @@ paths:
           $ref: '#/definitions/holder'
       - in: path
         name: Id
-        description: "When removing authorization to associate a VPC that was created
-          by one AWS account with a hosted zone \t\t\tthat was created with a different
-          AWS account, the ID of the hosted zone"
+        description: When removing authorization to associate a VPC that was created
+          by one AWS account with a hosted zone that was created with a different
+          AWS account, the ID of the hosted zone
         type: string
       - in: body
         name: VPC
-        description: "When removing authorization to associate a VPC that was created
-          by one AWS account with a hosted zone \t\t\tthat was created with a different
-          AWS account, a complex type that includes the ID and region of the VPC"
+        description: When removing authorization to associate a VPC that was created
+          by one AWS account with a hosted zone that was created with a different
+          AWS account, a complex type that includes the ID and region of the VPC
         schema:
           $ref: '#/definitions/holder'
       responses:
@@ -729,8 +725,8 @@ paths:
         type: string
       - in: body
         name: VPC
-        description: "A complex type that contains information about the VPC that
-          youre disassociating\t\t\tfrom the specified hosted zone"
+        description: A complex type that contains information about the VPC that youre
+          disassociatingfrom the specified hosted zone
         schema:
           $ref: '#/definitions/holder'
       responses:
@@ -839,10 +835,9 @@ paths:
       parameters:
       - in: path
         name: HealthCheckId
-        description: "If you want Amazon Route 53 to return this resource record set
-          in response to a DNS query only\t\t\twhen a health check is passing, include
-          the HealthCheckId element and specify the\t\t\tID of the applicable health
-          check"
+        description: If you want Amazon Route 53 to return this resource record set
+          in response to a DNS query onlywhen a health check is passing, include the
+          HealthCheckId element and specify theID of the applicable health check
         type: string
       responses:
         200:
