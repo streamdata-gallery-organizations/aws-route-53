@@ -23,10 +23,10 @@ description: Amazon Route 53 is a highly available and scalable cloud Domain Nam
   domains.
 image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Networking_AmazonRoute53.png
 x-kinRank: "8"
-x-alexaRank: ""
+x-alexaRank: "0"
 tags: AWS Route 53
-created: "2018-05-24"
-modified: "2018-05-24"
+created: "2018-06-20"
+modified: "2018-06-20"
 url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-route-53/master/_listings/aws-route-53/apis.md
 specificationVersion: "0.14"
 apis:
