@@ -25,13 +25,13 @@ image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/l
 x-kinRank: "8"
 x-alexaRank: "0"
 tags: AWS Route 53
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-29"
+modified: "2018-08-29"
 url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-route-53/master/_listings/aws-route-53/apis.md
 specificationVersion: "0.14"
 apis:
-- name: AWS Route 53 API Associate V P C With Hosted Zone
-  x-api-slug: aws-route-53-api
+- name: AWS Route 53 API - Associate V P C With Hosted Zone
+  x-api-slug: 20130401hostedzoneidassociatevpc-post
   description: Associates an Amazon VPC with a private hosted zone. ImportantTo perform
     the association, the VPC and the private hosted zone must already exist. You can't
     convert a public hosted zone into a private hosted zone.Send a POST request to
@@ -45,13 +45,14 @@ apis:
     request.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Networking_AmazonRoute53.png
   humanURL: https://aws.amazon.com/route53/
-  baseURL: ://///2013-04-01/hostedzone/Id/associatevpc
-  tags: VPC
+  baseURL: :///
+  tags: Amazon Web Services, DNS, API Service Provider, API Service Provider, API
+    Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-route-53/master/_listings/aws-route-53/20130401hostedzoneidassociatevpc-post-openapi.md
-- name: AWS Route 53 API Change Resource Record Sets
-  x-api-slug: aws-route-53-api
+- name: AWS Route 53 API - Change Resource Record Sets
+  x-api-slug: 20130401hostedzoneidrrset-post
   description: 'Create, change, update, or delete authoritative DNS information on
     all Amazon Route 53 servers.Send a POST request to:             /2013-04-01/hostedzone/Amazon
     Route 53 hosted ZoneID/rrset resource. The request body must include a document
@@ -102,25 +103,27 @@ apis:
     Route 53 Developer Guide.'
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Networking_AmazonRoute53.png
   humanURL: https://aws.amazon.com/route53/
-  baseURL: ://///2013-04-01/hostedzone/Id/rrset/
-  tags: Changes
+  baseURL: :///
+  tags: Amazon Web Services, DNS, API Service Provider, API Service Provider, API
+    Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-route-53/master/_listings/aws-route-53/20130401hostedzoneidrrset-post-openapi.md
-- name: AWS Route 53 API Change Tags For Resource
-  x-api-slug: aws-route-53-api
+- name: AWS Route 53 API - Change Tags For Resource
+  x-api-slug: 20130401tagsresourcetyperesourceid-post
   description: Adds, edits, or deletes tags for a health check or a hosted zone.For
     information about using tags for cost allocation, see Using Cost Allocation Tags
     in the AWS Billing and Cost Management User Guide.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Networking_AmazonRoute53.png
   humanURL: https://aws.amazon.com/route53/
-  baseURL: ://///2013-04-01/tags/ResourceType/ResourceId
-  tags: Changes
+  baseURL: :///
+  tags: Amazon Web Services, DNS, API Service Provider, API Service Provider, API
+    Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-route-53/master/_listings/aws-route-53/20130401tagsresourcetyperesourceid-post-openapi.md
-- name: AWS Route 53 API Create Health Check
-  x-api-slug: aws-route-53-api
+- name: AWS Route 53 API - Create Health Check
+  x-api-slug: 20130401healthcheck-post
   description: Creates a new health check.To create a new health check, send a POST
     request to the/2013-04-01/healthcheck resource. The request body must include
     a documentwith a CreateHealthCheckRequest element. The response returns theCreateHealthCheckResponse
@@ -144,13 +147,14 @@ apis:
     alarms by using the CloudWatch console,see the Amazon CloudWatch User Guide.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Networking_AmazonRoute53.png
   humanURL: https://aws.amazon.com/route53/
-  baseURL: ://///2013-04-01/healthcheck
-  tags: Checks,Health
+  baseURL: :///
+  tags: Amazon Web Services, DNS, API Service Provider, API Service Provider, API
+    Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-route-53/master/_listings/aws-route-53/20130401healthcheck-post-openapi.md
-- name: AWS Route 53 API Create Hosted Zone
-  x-api-slug: aws-route-53-api
+- name: AWS Route 53 API - Create Hosted Zone
+  x-api-slug: 20130401hostedzone-post
   description: Creates a new public hosted zone, used to specify how the Domain Name
     System (DNS)routes traffic on the Internet for a domain, such as example.com,
     and its subdomains. ImportantPublic hosted zones can't be converted to a private
@@ -175,13 +179,14 @@ apis:
     one.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Networking_AmazonRoute53.png
   humanURL: https://aws.amazon.com/route53/
-  baseURL: ://///2013-04-01/hostedzone
-  tags: Hosted Zones
+  baseURL: :///
+  tags: Amazon Web Services, DNS, API Service Provider, API Service Provider, API
+    Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-route-53/master/_listings/aws-route-53/20130401hostedzone-post-openapi.md
-- name: AWS Route 53 API Create Reusable Delegation Set
-  x-api-slug: aws-route-53-api
+- name: AWS Route 53 API - Create Reusable Delegation Set
+  x-api-slug: 20130401delegationset-post
   description: Creates a delegation set (a group of four name servers) that can be
     reused by multiplehosted zones. If a hosted zoned ID is specified, CreateReusableDelegationSetmarks
     the delegation set associated with that zone as reusableSend a POST request to
@@ -192,13 +197,14 @@ apis:
     as white label name servers), see Configuring White Label NameServers.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Networking_AmazonRoute53.png
   humanURL: https://aws.amazon.com/route53/
-  baseURL: ://///2013-04-01/delegationset
-  tags: Reusable Delegation Sets
+  baseURL: :///
+  tags: Amazon Web Services, DNS, API Service Provider, API Service Provider, API
+    Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-route-53/master/_listings/aws-route-53/20130401delegationset-post-openapi.md
-- name: AWS Route 53 API Create Traffic Policy
-  x-api-slug: aws-route-53-api
+- name: AWS Route 53 API - Create Traffic Policy
+  x-api-slug: 20130401trafficpolicy-post
   description: Creates a traffic policy, which you use to create multiple DNS resource
     record sets forone domain name (such as example.com) or one subdomain name (such
     aswww.example.com).Send a POST request to the /2013-04-01/trafficpolicy resource.
@@ -207,13 +213,14 @@ apis:
     about the newtraffic policy.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Networking_AmazonRoute53.png
   humanURL: https://aws.amazon.com/route53/
-  baseURL: ://///2013-04-01/trafficpolicy
-  tags: Traffic Policies
+  baseURL: :///
+  tags: Amazon Web Services, DNS, API Service Provider, API Service Provider, API
+    Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-route-53/master/_listings/aws-route-53/20130401trafficpolicy-post-openapi.md
-- name: AWS Route 53 API Create Traffic Policy Instance
-  x-api-slug: aws-route-53-api
+- name: AWS Route 53 API - Create Traffic Policy Instance
+  x-api-slug: 20130401trafficpolicyinstance-post
   description: Creates resource record sets in a specified hosted zone based on the
     settings in aspecified traffic policy version. In addition, CreateTrafficPolicyInstanceassociates
     the resource record sets with a specified domain name (such as example.com) orsubdomain
@@ -225,13 +232,14 @@ apis:
     aboutthe traffic policy instance.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Networking_AmazonRoute53.png
   humanURL: https://aws.amazon.com/route53/
-  baseURL: ://///2013-04-01/trafficpolicyinstance
-  tags: Traffic Policies
+  baseURL: :///
+  tags: Amazon Web Services, DNS, API Service Provider, API Service Provider, API
+    Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-route-53/master/_listings/aws-route-53/20130401trafficpolicyinstance-post-openapi.md
-- name: AWS Route 53 API Create Traffic Policy Version
-  x-api-slug: aws-route-53-api
+- name: AWS Route 53 API - Create Traffic Policy Version
+  x-api-slug: 20130401trafficpolicyid-post
   description: Creates a new version of an existing traffic policy. When you create
     a new version of atraffic policy, you specify the ID of the traffic policy that
     you want to update and aJSON-formatted document that describes the new version.
@@ -245,13 +253,14 @@ apis:
     new version of the traffic policy.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Networking_AmazonRoute53.png
   humanURL: https://aws.amazon.com/route53/
-  baseURL: ://///2013-04-01/trafficpolicy/Id
-  tags: Traffic Policies
+  baseURL: :///
+  tags: Amazon Web Services, DNS, API Service Provider, API Service Provider, API
+    Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-route-53/master/_listings/aws-route-53/20130401trafficpolicyid-post-openapi.md
-- name: AWS Route 53 API Create V P C Association Authorization
-  x-api-slug: aws-route-53-api
+- name: AWS Route 53 API - Create V P C Association Authorization
+  x-api-slug: 20130401hostedzoneidauthorizevpcassociation-post
   description: Authorizes the AWS account that created a specified VPC to submit an
     AssociateVPCWithHostedZone request to associate the VPC with a specified hosted
     zone that was created by a different account. To submit a CreateVPCAssociationAuthorization
@@ -265,13 +274,14 @@ apis:
     The response contains information about the authorization.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Networking_AmazonRoute53.png
   humanURL: https://aws.amazon.com/route53/
-  baseURL: ://///2013-04-01/hostedzone/Id/authorizevpcassociation
-  tags: VPC
+  baseURL: :///
+  tags: Amazon Web Services, DNS, API Service Provider, API Service Provider, API
+    Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-route-53/master/_listings/aws-route-53/20130401hostedzoneidauthorizevpcassociation-post-openapi.md
-- name: AWS Route 53 API Delete Health Check
-  x-api-slug: aws-route-53-api
+- name: AWS Route 53 API - Delete Health Check
+  x-api-slug: 20130401healthcheckhealthcheckid-delete
   description: Deletes a health check. Send a DELETE request to the/2013-04-01/healthcheck/health
     check ID            resource.ImportantAmazon Route 53 does not prevent you from
     deleting a health check even if the health check isassociated with one or more
@@ -282,13 +292,14 @@ apis:
     53 Developer Guide.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Networking_AmazonRoute53.png
   humanURL: https://aws.amazon.com/route53/
-  baseURL: ://///2013-04-01/healthcheck/HealthCheckId
-  tags: Checks,Health
+  baseURL: :///
+  tags: Amazon Web Services, DNS, API Service Provider, API Service Provider, API
+    Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-route-53/master/_listings/aws-route-53/20130401healthcheckhealthcheckid-delete-openapi.md
-- name: AWS Route 53 API Delete Hosted Zone
-  x-api-slug: aws-route-53-api
+- name: AWS Route 53 API - Delete Hosted Zone
+  x-api-slug: 20130401hostedzoneid-delete
   description: Deletes a hosted zone. Send a DELETE request to the /Amazon Route 53API
     version/hostedzone/hosted zone ID             resource.ImportantDelete a hosted
     zone only if there are no resource record sets other than the defaultSOA record
@@ -299,13 +310,14 @@ apis:
     zone, see ChangeResourceRecordSets.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Networking_AmazonRoute53.png
   humanURL: https://aws.amazon.com/route53/
-  baseURL: ://///2013-04-01/hostedzone/Id
-  tags: Hosted Zones
+  baseURL: :///
+  tags: Amazon Web Services, DNS, API Service Provider, API Service Provider, API
+    Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-route-53/master/_listings/aws-route-53/20130401hostedzoneid-delete-openapi.md
-- name: AWS Route 53 API Delete Reusable Delegation Set
-  x-api-slug: aws-route-53-api
+- name: AWS Route 53 API - Delete Reusable Delegation Set
+  x-api-slug: 20130401delegationsetid-delete
   description: Deletes a reusable delegation set. Send a DELETE request to the/2013-04-01/delegationset/delegation
     set ID            resource.Important You can delete a reusable delegation set
     only if there are no associated hostedzones.To verify that the reusable delegation
@@ -313,37 +325,40 @@ apis:
     and specify the ID of the reusabledelegation set that you want to delete.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Networking_AmazonRoute53.png
   humanURL: https://aws.amazon.com/route53/
-  baseURL: ://///2013-04-01/delegationset/Id
-  tags: Reusable Delegation Sets
+  baseURL: :///
+  tags: Amazon Web Services, DNS, API Service Provider, API Service Provider, API
+    Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-route-53/master/_listings/aws-route-53/20130401delegationsetid-delete-openapi.md
-- name: AWS Route 53 API Delete Traffic Policy
-  x-api-slug: aws-route-53-api
+- name: AWS Route 53 API - Delete Traffic Policy
+  x-api-slug: 20130401trafficpolicyidversion-delete
   description: Deletes a traffic policy.Send a DELETE request to the /Amazon Route
     53 APIversion/trafficpolicy resource.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Networking_AmazonRoute53.png
   humanURL: https://aws.amazon.com/route53/
-  baseURL: ://///2013-04-01/trafficpolicy/Id/Version
-  tags: Traffic Policies
+  baseURL: :///
+  tags: Amazon Web Services, DNS, API Service Provider, API Service Provider, API
+    Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-route-53/master/_listings/aws-route-53/20130401trafficpolicyidversion-delete-openapi.md
-- name: AWS Route 53 API Delete Traffic Policy Instance
-  x-api-slug: aws-route-53-api
+- name: AWS Route 53 API - Delete Traffic Policy Instance
+  x-api-slug: 20130401trafficpolicyinstanceid-delete
   description: Deletes a traffic policy instance and all of the resource record sets
     that Amazon Route 53created when you created the instance.Send a DELETE request
     to the /Amazon Route 53 APIversion/trafficpolicy/traffic policy instance ID            resource.NoteIn
     the Amazon Route 53 console, traffic policy instances are known as policy records.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Networking_AmazonRoute53.png
   humanURL: https://aws.amazon.com/route53/
-  baseURL: ://///2013-04-01/trafficpolicyinstance/Id
-  tags: Traffic Policies
+  baseURL: :///
+  tags: Amazon Web Services, DNS, API Service Provider, API Service Provider, API
+    Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-route-53/master/_listings/aws-route-53/20130401trafficpolicyinstanceid-delete-openapi.md
-- name: AWS Route 53 API Delete V P C Association Authorization
-  x-api-slug: aws-route-53-api
+- name: AWS Route 53 API - Delete V P C Association Authorization
+  x-api-slug: 20130401hostedzoneiddeauthorizevpcassociation-post
   description: Removes authorization to submit an AssociateVPCWithHostedZone request
     to associate a specified VPC with a hosted zone that was created by a different
     account. You must use the account that created the hosted zone to submit a DeleteVPCAssociationAuthorization
@@ -356,13 +371,14 @@ apis:
     with a DeleteVPCAssociationAuthorizationRequest element.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Networking_AmazonRoute53.png
   humanURL: https://aws.amazon.com/route53/
-  baseURL: ://///2013-04-01/hostedzone/Id/deauthorizevpcassociation
-  tags: VPC
+  baseURL: :///
+  tags: Amazon Web Services, DNS, API Service Provider, API Service Provider, API
+    Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-route-53/master/_listings/aws-route-53/20130401hostedzoneiddeauthorizevpcassociation-post-openapi.md
-- name: AWS Route 53 API Disassociate V P C From Hosted Zone
-  x-api-slug: aws-route-53-api
+- name: AWS Route 53 API - Disassociate V P C From Hosted Zone
+  x-api-slug: 20130401hostedzoneiddisassociatevpc-post
   description: Disassociates a VPC from a Amazon Route 53 private hosted zone. NoteYou
     can't disassociate the last VPC from a private hosted zone.Send a POST request
     to the /2013-04-01/hostedzone/hosted zone ID/disassociatevpcresource. The request
@@ -373,13 +389,14 @@ apis:
     hosted zone.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Networking_AmazonRoute53.png
   humanURL: https://aws.amazon.com/route53/
-  baseURL: ://///2013-04-01/hostedzone/Id/disassociatevpc
-  tags: VPC
+  baseURL: :///
+  tags: Amazon Web Services, DNS, API Service Provider, API Service Provider, API
+    Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-route-53/master/_listings/aws-route-53/20130401hostedzoneiddisassociatevpc-post-openapi.md
-- name: AWS Route 53 API Get Change
-  x-api-slug: aws-route-53-api
+- name: AWS Route 53 API - Get Change
+  x-api-slug: 20130401changeid-get
   description: 'Returns the current status of a change batch request. The status is
     one of thefollowing values:                  PENDING indicates that the changes
     in this request have not replicatedto all Amazon Route 53 DNS servers. This is
@@ -387,132 +404,143 @@ apis:
     that the changes have replicated to all Amazon Route 53 DNSservers.'
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Networking_AmazonRoute53.png
   humanURL: https://aws.amazon.com/route53/
-  baseURL: ://///2013-04-01/change/Id
-  tags: Changes
+  baseURL: :///
+  tags: Amazon Web Services, DNS, API Service Provider, API Service Provider, API
+    Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-route-53/master/_listings/aws-route-53/20130401changeid-get-openapi.md
-- name: AWS Route 53 API Get Checker Ip Ranges
-  x-api-slug: aws-route-53-api
+- name: AWS Route 53 API - Get Checker Ip Ranges
+  x-api-slug: 20130401checkeripranges-get
   description: GetCheckerIpRanges still works, but we recommend that you download
     ip-ranges.json, which includes IP address ranges for all AWS services. For more
     information, see IP Address Ranges of Amazon Route 53 Servers in the Amazon Route
     53 Developer Guide.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Networking_AmazonRoute53.png
   humanURL: https://aws.amazon.com/route53/
-  baseURL: ://///2013-04-01/checkeripranges
-  tags: IP Ranges
+  baseURL: :///
+  tags: Amazon Web Services, DNS, API Service Provider, API Service Provider, API
+    Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-route-53/master/_listings/aws-route-53/20130401checkeripranges-get-openapi.md
-- name: AWS Route 53 API Get Geo Location
-  x-api-slug: aws-route-53-api
+- name: AWS Route 53 API - Get Geo Location
+  x-api-slug: 20130401geolocationcontinentcodecontinentcodeampcountrycodecountrycodeampsubdivisioncodesubdivisioncode-get
   description: 'Retrieves a single geo location. Send a GET request to the/2013-04-01/geolocation
     resource with one of these options: continentcode |countrycode | countrycode and
     subdivisioncode.'
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Networking_AmazonRoute53.png
   humanURL: https://aws.amazon.com/route53/
-  baseURL: ://///2013-04-01/geolocation?continentcode=ContinentCode&amp;countrycode=CountryCode&amp;subdivisioncode=SubdivisionCode
-  tags: Locations
+  baseURL: :///
+  tags: Amazon Web Services, DNS, API Service Provider, API Service Provider, API
+    Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-route-53/master/_listings/aws-route-53/20130401geolocationcontinentcodecontinentcodeampcountrycodecountrycodeampsubdivisioncodesubdivisioncode-get-openapi.md
-- name: AWS Route 53 API Get Health Check
-  x-api-slug: aws-route-53-api
+- name: AWS Route 53 API - Get Health Check
+  x-api-slug: 20130401healthcheckhealthcheckid-get
   description: Gets information about a specified health check. Send a GET request
     to the/2013-04-01/healthcheck/health check ID             resource. Formore information
     about using the console to perform this operation, see Amazon Route 53 Health
     Checks and DNS Failover in theAmazon Route 53 Developer Guide.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Networking_AmazonRoute53.png
   humanURL: https://aws.amazon.com/route53/
-  baseURL: ://///2013-04-01/healthcheck/HealthCheckId
-  tags: Checks,Health
+  baseURL: :///
+  tags: Amazon Web Services, DNS, API Service Provider, API Service Provider, API
+    Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-route-53/master/_listings/aws-route-53/20130401healthcheckhealthcheckid-get-openapi.md
-- name: AWS Route 53 API Get Health Check Count
-  x-api-slug: aws-route-53-api
+- name: AWS Route 53 API - Get Health Check Count
+  x-api-slug: 20130401healthcheckcount-get
   description: To retrieve a count of all your health checks, send a GET request to
     the/2013-04-01/healthcheckcount resource.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Networking_AmazonRoute53.png
   humanURL: https://aws.amazon.com/route53/
-  baseURL: ://///2013-04-01/healthcheckcount
-  tags: Checks,Health
+  baseURL: :///
+  tags: Amazon Web Services, DNS, API Service Provider, API Service Provider, API
+    Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-route-53/master/_listings/aws-route-53/20130401healthcheckcount-get-openapi.md
-- name: AWS Route 53 API Get Health Check Last Failure Reason
-  x-api-slug: aws-route-53-api
+- name: AWS Route 53 API - Get Health Check Last Failure Reason
+  x-api-slug: 20130401healthcheckhealthcheckidlastfailurereason-get
   description: If you want to learn why a health check is currently failing or why
     it failed mostrecently (if at all), you can get the failure reason for the most
     recent failure. Send aGET request to the /Amazon Route 53 APIversion/healthcheck/health
     checkID/lastfailurereason resource.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Networking_AmazonRoute53.png
   humanURL: https://aws.amazon.com/route53/
-  baseURL: ://///2013-04-01/healthcheck/HealthCheckId/lastfailurereason
-  tags: Checks,Health
+  baseURL: :///
+  tags: Amazon Web Services, DNS, API Service Provider, API Service Provider, API
+    Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-route-53/master/_listings/aws-route-53/20130401healthcheckhealthcheckidlastfailurereason-get-openapi.md
-- name: AWS Route 53 API Get Health Check Status
-  x-api-slug: aws-route-53-api
+- name: AWS Route 53 API - Get Health Check Status
+  x-api-slug: 20130401healthcheckhealthcheckidstatus-get
   description: Gets status of a specified health check. Send a GET request to the/2013-04-01/healthcheck/health
     check ID/status resource.You can use this call to get a health check's current
     status.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Networking_AmazonRoute53.png
   humanURL: https://aws.amazon.com/route53/
-  baseURL: ://///2013-04-01/healthcheck/HealthCheckId/status
-  tags: Checks,Health
+  baseURL: :///
+  tags: Amazon Web Services, DNS, API Service Provider, API Service Provider, API
+    Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-route-53/master/_listings/aws-route-53/20130401healthcheckhealthcheckidstatus-get-openapi.md
-- name: AWS Route 53 API Get Hosted Zone
-  x-api-slug: aws-route-53-api
+- name: AWS Route 53 API - Get Hosted Zone
+  x-api-slug: 20130401hostedzoneid-get
   description: Retrieves the delegation set for a hosted zone, including the four
     name serversassigned to the hosted zone. Send a GET request to the /Amazon Route
     53 APIversion/hostedzone/hosted zone ID             resource.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Networking_AmazonRoute53.png
   humanURL: https://aws.amazon.com/route53/
-  baseURL: ://///2013-04-01/hostedzone/Id
-  tags: Hosted Zones
+  baseURL: :///
+  tags: Amazon Web Services, DNS, API Service Provider, API Service Provider, API
+    Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-route-53/master/_listings/aws-route-53/20130401hostedzoneid-get-openapi.md
-- name: AWS Route 53 API Get Hosted Zone Count
-  x-api-slug: aws-route-53-api
+- name: AWS Route 53 API - Get Hosted Zone Count
+  x-api-slug: 20130401hostedzonecount-get
   description: Retrieves a count of all your hosted zones. Send a GET request to the/2013-04-01/hostedzonecount
     resource.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Networking_AmazonRoute53.png
   humanURL: https://aws.amazon.com/route53/
-  baseURL: ://///2013-04-01/hostedzonecount
-  tags: Hosted Zones
+  baseURL: :///
+  tags: Amazon Web Services, DNS, API Service Provider, API Service Provider, API
+    Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-route-53/master/_listings/aws-route-53/20130401hostedzonecount-get-openapi.md
-- name: AWS Route 53 API Get Reusable Delegation Set
-  x-api-slug: aws-route-53-api
+- name: AWS Route 53 API - Get Reusable Delegation Set
+  x-api-slug: 20130401delegationsetid-get
   description: Retrieves the reusable delegation set. Send a GET request to the/2013-04-01/delegationset/delegation
     set ID            resource.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Networking_AmazonRoute53.png
   humanURL: https://aws.amazon.com/route53/
-  baseURL: ://///2013-04-01/delegationset/Id
-  tags: Reusable Delegation Sets
+  baseURL: :///
+  tags: Amazon Web Services, DNS, API Service Provider, API Service Provider, API
+    Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-route-53/master/_listings/aws-route-53/20130401delegationsetid-get-openapi.md
-- name: AWS Route 53 API Get Traffic Policy
-  x-api-slug: aws-route-53-api
+- name: AWS Route 53 API - Get Traffic Policy
+  x-api-slug: 20130401trafficpolicyidversion-get
   description: Gets information about a specific traffic policy version.Send a GET
     request to the /Amazon Route 53 APIversion/trafficpolicy resource.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Networking_AmazonRoute53.png
   humanURL: https://aws.amazon.com/route53/
-  baseURL: ://///2013-04-01/trafficpolicy/Id/Version
-  tags: Traffic Policies
+  baseURL: :///
+  tags: Amazon Web Services, DNS, API Service Provider, API Service Provider, API
+    Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-route-53/master/_listings/aws-route-53/20130401trafficpolicyidversion-get-openapi.md
-- name: AWS Route 53 API Get Traffic Policy Instance
-  x-api-slug: aws-route-53-api
+- name: AWS Route 53 API - Get Traffic Policy Instance
+  x-api-slug: 20130401trafficpolicyinstanceid-get
   description: Gets information about a specified traffic policy instance.Send a GET
     request to the /Amazon Route 53 APIversion/trafficpolicyinstance resource.NoteAfter
     you submit a CreateTrafficPolicyInstance or anUpdateTrafficPolicyInstance request,
@@ -522,25 +550,27 @@ apis:
     are known as policy records.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Networking_AmazonRoute53.png
   humanURL: https://aws.amazon.com/route53/
-  baseURL: ://///2013-04-01/trafficpolicyinstance/Id
-  tags: Traffic Policies
+  baseURL: :///
+  tags: Amazon Web Services, DNS, API Service Provider, API Service Provider, API
+    Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-route-53/master/_listings/aws-route-53/20130401trafficpolicyinstanceid-get-openapi.md
-- name: AWS Route 53 API Get Traffic Policy Instance Count
-  x-api-slug: aws-route-53-api
+- name: AWS Route 53 API - Get Traffic Policy Instance Count
+  x-api-slug: 20130401trafficpolicyinstancecount-get
   description: Gets the number of traffic policy instances that are associated with
     the current AWSaccount.To get the number of traffic policy instances, send a GET
     request to the/2013-04-01/trafficpolicyinstancecount resource.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Networking_AmazonRoute53.png
   humanURL: https://aws.amazon.com/route53/
-  baseURL: ://///2013-04-01/trafficpolicyinstancecount
-  tags: Traffic Policies
+  baseURL: :///
+  tags: Amazon Web Services, DNS, API Service Provider, API Service Provider, API
+    Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-route-53/master/_listings/aws-route-53/20130401trafficpolicyinstancecount-get-openapi.md
-- name: AWS Route 53 API List Geo Locations
-  x-api-slug: aws-route-53-api
+- name: AWS Route 53 API - List Geo Locations
+  x-api-slug: 20130401geolocationsampmaxitemsmaxitemsstartcontinentcodestartcontinentcodeampstartcountrycodestartcountrycodeampstartsubdivisioncodestartsubdivisioncode-get
   description: Retrieves a list of supported geo locations. Send a GET request to
     the/2013-04-01/geolocations resource. The response to this request includes aGeoLocationDetailsList
     element for each location that Amazon Route 53 supports.Countries are listed first,
@@ -549,13 +579,14 @@ apis:
     listed in alphabetical order immediately after the corresponding country.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Networking_AmazonRoute53.png
   humanURL: https://aws.amazon.com/route53/
-  baseURL: ://///2013-04-01/geolocations&amp;maxitems=MaxItems?startcontinentcode=StartContinentCode&amp;startcountrycode=StartCountryCode&amp;startsubdivisioncode=StartSubdivisionCode
-  tags: Locations
+  baseURL: :///
+  tags: Amazon Web Services, DNS, API Service Provider, API Service Provider, API
+    Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-route-53/master/_listings/aws-route-53/20130401geolocationsampmaxitemsmaxitemsstartcontinentcodestartcontinentcodeampstartcountrycodestartcountrycodeampstartsubdivisioncodestartsubdivisioncode-get-openapi.md
-- name: AWS Route 53 API List Health Checks
-  x-api-slug: aws-route-53-api
+- name: AWS Route 53 API - List Health Checks
+  x-api-slug: 20130401healthcheckmarkermarkerampmaxitemsmaxitems-get
   description: Retrieve a list of your health checks. Send a GET request to the/2013-04-01/healthcheck
     resource. The response to this request includes aHealthChecks element with zero
     or more HealthCheck child elements.By default, the list of health checks is displayed
@@ -565,13 +596,14 @@ apis:
     the Amazon Route 53 console, see Amazon Route 53 Health Checks and DNS Failover.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Networking_AmazonRoute53.png
   humanURL: https://aws.amazon.com/route53/
-  baseURL: ://///2013-04-01/healthcheck?marker=Marker&amp;maxitems=MaxItems
-  tags: Checks,Health
+  baseURL: :///
+  tags: Amazon Web Services, DNS, API Service Provider, API Service Provider, API
+    Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-route-53/master/_listings/aws-route-53/20130401healthcheckmarkermarkerampmaxitemsmaxitems-get-openapi.md
-- name: AWS Route 53 API List Hosted Zones
-  x-api-slug: aws-route-53-api
+- name: AWS Route 53 API - List Hosted Zones
+  x-api-slug: 20130401hostedzoneampdelegationsetiddelegationsetidmarkermarkerampmaxitemsmaxitems-get
   description: 'To retrieve a list of your public and private hosted zones, send a
     GETrequest to the /2013-04-01/hostedzone resource. The response to this requestincludes
     a HostedZones child element for each hosted zone created by the currentAWS account.Amazon
@@ -590,13 +622,14 @@ apis:
     parameter in the previous request.'
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Networking_AmazonRoute53.png
   humanURL: https://aws.amazon.com/route53/
-  baseURL: ://///2013-04-01/hostedzone&amp;delegationsetid=DelegationSetId?marker=Marker&amp;maxitems=MaxItems
-  tags: Hosted Zones
+  baseURL: :///
+  tags: Amazon Web Services, DNS, API Service Provider, API Service Provider, API
+    Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-route-53/master/_listings/aws-route-53/20130401hostedzoneampdelegationsetiddelegationsetidmarkermarkerampmaxitemsmaxitems-get-openapi.md
-- name: AWS Route 53 API List Hosted Zones By Name
-  x-api-slug: aws-route-53-api
+- name: AWS Route 53 API - List Hosted Zones By Name
+  x-api-slug: 20130401hostedzonesbynamednsnamednsnameamphostedzoneidhostedzoneidampmaxitemsmaxitems-get
   description: 'Retrieves a list of your hosted zones in lexicographic order. Send
     a GETrequest to the /2013-04-01/hostedzonesbyname resource. The response includes
     aHostedZones child element for each hosted zone created by the current AWSaccount.             ListHostedZonesByName
@@ -628,13 +661,14 @@ apis:
     parameters, respectively.'
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Networking_AmazonRoute53.png
   humanURL: https://aws.amazon.com/route53/
-  baseURL: ://///2013-04-01/hostedzonesbyname?dnsname=DNSName&amp;hostedzoneid=HostedZoneId&amp;maxitems=MaxItems
-  tags: Hosted Zones
+  baseURL: :///
+  tags: Amazon Web Services, DNS, API Service Provider, API Service Provider, API
+    Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-route-53/master/_listings/aws-route-53/20130401hostedzonesbynamednsnamednsnameamphostedzoneidhostedzoneidampmaxitemsmaxitems-get-openapi.md
-- name: AWS Route 53 API List Resource Record Sets
-  x-api-slug: aws-route-53-api
+- name: AWS Route 53 API - List Resource Record Sets
+  x-api-slug: 20130401hostedzoneidrrsetampidentifierstartrecordidentifierampmaxitemsmaxitemsnamestartrecordnameamptypestartrecordtype-get
   description: 'Lists the resource record sets in a specified hosted zone.            ListResourceRecordSets
     returns up to 100 resource record sets at a time in ASCII order, beginning at
     a position specified by the name and type elements. The action sorts results first
@@ -658,13 +692,14 @@ apis:
     pages display results with the latest changes.'
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Networking_AmazonRoute53.png
   humanURL: https://aws.amazon.com/route53/
-  baseURL: ://///2013-04-01/hostedzone/Id/rrset&amp;identifier=StartRecordIdentifier&amp;maxitems=MaxItems?name=StartRecordName&amp;type=StartRecordType
-  tags: Resource Record Sets
+  baseURL: :///
+  tags: Amazon Web Services, DNS, API Service Provider, API Service Provider, API
+    Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-route-53/master/_listings/aws-route-53/20130401hostedzoneidrrsetampidentifierstartrecordidentifierampmaxitemsmaxitemsnamestartrecordnameamptypestartrecordtype-get-openapi.md
-- name: AWS Route 53 API List Reusable Delegation Sets
-  x-api-slug: aws-route-53-api
+- name: AWS Route 53 API - List Reusable Delegation Sets
+  x-api-slug: 20130401delegationsetmarkermarkerampmaxitemsmaxitems-get
   description: To retrieve a list of your reusable delegation sets, send a GET request
     tothe /2013-04-01/delegationset resource. The response to this request includes
     aDelegationSets element with zero, one, or multiple DelegationSetchild elements.
@@ -675,37 +710,40 @@ apis:
     value greater than100, Amazon Route 53 returns only the first 100.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Networking_AmazonRoute53.png
   humanURL: https://aws.amazon.com/route53/
-  baseURL: ://///2013-04-01/delegationset?marker=Marker&amp;maxitems=MaxItems
-  tags: Reusable Delegation Sets
+  baseURL: :///
+  tags: Amazon Web Services, DNS, API Service Provider, API Service Provider, API
+    Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-route-53/master/_listings/aws-route-53/20130401delegationsetmarkermarkerampmaxitemsmaxitems-get-openapi.md
-- name: AWS Route 53 API List Tags For Resource
-  x-api-slug: aws-route-53-api
+- name: AWS Route 53 API - List Tags For Resource
+  x-api-slug: 20130401tagsresourcetyperesourceid-get
   description: Lists tags for one health check or hosted zone. For information about
     using tags for cost allocation, see Using Cost Allocation Tags in the AWS Billing
     and Cost Management User Guide.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Networking_AmazonRoute53.png
   humanURL: https://aws.amazon.com/route53/
-  baseURL: ://///2013-04-01/tags/ResourceType/ResourceId
-  tags: Tags
+  baseURL: :///
+  tags: Amazon Web Services, DNS, API Service Provider, API Service Provider, API
+    Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-route-53/master/_listings/aws-route-53/20130401tagsresourcetyperesourceid-get-openapi.md
-- name: AWS Route 53 API List Tags For Resources
-  x-api-slug: aws-route-53-api
+- name: AWS Route 53 API - List Tags For Resources
+  x-api-slug: 20130401tagsresourcetype-post
   description: Lists tags for up to 10 health checks or hosted zones.For information
     about using tags for cost allocation, see Using Cost Allocation Tags in the AWS
     Billing and Cost Management User Guide.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Networking_AmazonRoute53.png
   humanURL: https://aws.amazon.com/route53/
-  baseURL: ://///2013-04-01/tags/ResourceType
-  tags: Tags
+  baseURL: :///
+  tags: Amazon Web Services, DNS, API Service Provider, API Service Provider, API
+    Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-route-53/master/_listings/aws-route-53/20130401tagsresourcetype-post-openapi.md
-- name: AWS Route 53 API List Traffic Policies
-  x-api-slug: aws-route-53-api
+- name: AWS Route 53 API - List Traffic Policies
+  x-api-slug: 20130401trafficpoliciesampmaxitemsmaxitemstrafficpolicyidtrafficpolicyidmarker-get
   description: 'Gets information about the latest version for every traffic policy
     that is associatedwith the current AWS account. Send a GET request to the /Amazon
     Route 53API version/trafficpolicy resource.Amazon Route 53 returns a maximum of
@@ -725,13 +763,14 @@ apis:
     the current response.'
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Networking_AmazonRoute53.png
   humanURL: https://aws.amazon.com/route53/
-  baseURL: ://///2013-04-01/trafficpolicies&amp;maxitems=MaxItems?trafficpolicyid=TrafficPolicyIdMarker
-  tags: Traffic Policies
+  baseURL: :///
+  tags: Amazon Web Services, DNS, API Service Provider, API Service Provider, API
+    Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-route-53/master/_listings/aws-route-53/20130401trafficpoliciesampmaxitemsmaxitemstrafficpolicyidtrafficpolicyidmarker-get-openapi.md
-- name: AWS Route 53 API List Traffic Policy Instances
-  x-api-slug: aws-route-53-api
+- name: AWS Route 53 API - List Traffic Policy Instances
+  x-api-slug: 20130401trafficpolicyinstanceshostedzoneidhostedzoneidmarkerampmaxitemsmaxitemsamptrafficpolicyinstancenametrafficpolicyinstancenamemarkeramptrafficpolicyinstancetypetrafficpolicyinstancetypemarker-get
   description: 'Gets information about the traffic policy instances that you created
     by using thecurrent AWS account.NoteAfter you submit an UpdateTrafficPolicyInstance
     request, there''s a briefdelay while Amazon Route 53 creates the resource record
@@ -754,13 +793,14 @@ apis:
     is false, all three elements are omittedfrom the response.'
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Networking_AmazonRoute53.png
   humanURL: https://aws.amazon.com/route53/
-  baseURL: ://///2013-04-01/trafficpolicyinstances?hostedzoneid=HostedZoneIdMarker&amp;maxitems=MaxItems&amp;trafficpolicyinstancename=TrafficPolicyInstanceNameMarker&amp;trafficpolicyinstancetype=TrafficPolicyInstanceTypeMarker
-  tags: Traffic Policies
+  baseURL: :///
+  tags: Amazon Web Services, DNS, API Service Provider, API Service Provider, API
+    Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-route-53/master/_listings/aws-route-53/20130401trafficpolicyinstanceshostedzoneidhostedzoneidmarkerampmaxitemsmaxitemsamptrafficpolicyinstancenametrafficpolicyinstancenamemarkeramptrafficpolicyinstancetypetrafficpolicyinstancetypemarker-get-openapi.md
-- name: AWS Route 53 API List Traffic Policy Instances By Hosted Zone
-  x-api-slug: aws-route-53-api
+- name: AWS Route 53 API - List Traffic Policy Instances By Hosted Zone
+  x-api-slug: 20130401trafficpolicyinstanceshostedzoneidhostedzoneidampmaxitemsmaxitemsamptrafficpolicyinstancenametrafficpolicyinstancenamemarkeramptrafficpolicyinstancetypetrafficpolicyinstancetypemarker-get
   description: 'Gets information about the traffic policy instances that you created
     in a specifiedhosted zone.NoteAfter you submit an UpdateTrafficPolicyInstance
     request, there''s a briefdelay while Amazon Route 53 creates the resource record
@@ -783,13 +823,14 @@ apis:
     is false, all three elements are omittedfrom the response.'
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Networking_AmazonRoute53.png
   humanURL: https://aws.amazon.com/route53/
-  baseURL: ://///2013-04-01/trafficpolicyinstances/hostedzone?id=HostedZoneId&amp;maxitems=MaxItems&amp;trafficpolicyinstancename=TrafficPolicyInstanceNameMarker&amp;trafficpolicyinstancetype=TrafficPolicyInstanceTypeMarker
-  tags: Traffic Policies
+  baseURL: :///
+  tags: Amazon Web Services, DNS, API Service Provider, API Service Provider, API
+    Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-route-53/master/_listings/aws-route-53/20130401trafficpolicyinstanceshostedzoneidhostedzoneidampmaxitemsmaxitemsamptrafficpolicyinstancenametrafficpolicyinstancenamemarkeramptrafficpolicyinstancetypetrafficpolicyinstancetypemarker-get-openapi.md
-- name: AWS Route 53 API List Traffic Policy Versions
-  x-api-slug: aws-route-53-api
+- name: AWS Route 53 API - List Traffic Policy Versions
+  x-api-slug: 20130401trafficpoliciesidversionsampmaxitemsmaxitemstrafficpolicyversiontrafficpolicyversionmarker-get
   description: 'Gets information about all of the versions for a specified traffic
     policy.Send a GET request to the /Amazon Route 53 APIversion/trafficpolicy resource
     and specify the ID of the traffic policyfor which you want to list versions.Amazon
@@ -809,13 +850,14 @@ apis:
     for the MaxItems parameter in the requestthat produced the current response.'
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Networking_AmazonRoute53.png
   humanURL: https://aws.amazon.com/route53/
-  baseURL: ://///2013-04-01/trafficpolicies/Id/versions&amp;maxitems=MaxItems?trafficpolicyversion=TrafficPolicyVersionMarker
-  tags: Traffic Policies
+  baseURL: :///
+  tags: Amazon Web Services, DNS, API Service Provider, API Service Provider, API
+    Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-route-53/master/_listings/aws-route-53/20130401trafficpoliciesidversionsampmaxitemsmaxitemstrafficpolicyversiontrafficpolicyversionmarker-get-openapi.md
-- name: AWS Route 53 API List V P C Association Authorizations
-  x-api-slug: aws-route-53-api
+- name: AWS Route 53 API - List V P C Association Authorizations
+  x-api-slug: 20130401hostedzoneidauthorizevpcassociationampmaxresultsmaxresultsnexttokennexttoken-get
   description: 'Gets a list of the VPCs that were created by other accounts and that
     can be associated with a specified hosted zone because you''ve submitted one or
     more CreateVPCAssociationAuthorization requests. Send a GET request to the /2013-04-01/hostedzone/hosted
@@ -831,25 +873,27 @@ apis:
     per page&amp;NextToken='
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Networking_AmazonRoute53.png
   humanURL: https://aws.amazon.com/route53/
-  baseURL: ://///2013-04-01/hostedzone/Id/authorizevpcassociation&amp;maxresults=MaxResults?nexttoken=NextToken
-  tags: VPC
+  baseURL: :///
+  tags: Amazon Web Services, DNS, API Service Provider, API Service Provider, API
+    Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-route-53/master/_listings/aws-route-53/20130401hostedzoneidauthorizevpcassociationampmaxresultsmaxresultsnexttokennexttoken-get-openapi.md
-- name: AWS Route 53 API Test D N S Answer
-  x-api-slug: aws-route-53-api
+- name: AWS Route 53 API - Test D N S Answer
+  x-api-slug: 20130401testdnsanswerampedns0clientsubnetipedns0clientsubnetipampedns0clientsubnetmaskedns0clientsubnetmaskhostedzoneidhostedzoneidamprecordnamerecordnameamprecordtyperecordtypeampresolveripresolverip-get
   description: Gets the value that Amazon Route 53 returns in response to a DNS request
     for a specified record name and type. You can optionally specify the IP address
     of a DNS resolver, an EDNS0 client subnet IP address, and a subnet mask.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Networking_AmazonRoute53.png
   humanURL: https://aws.amazon.com/route53/
-  baseURL: ://///2013-04-01/testdnsanswer&amp;edns0clientsubnetip=EDNS0ClientSubnetIP&amp;edns0clientsubnetmask=EDNS0ClientSubnetMask?hostedzoneid=HostedZoneId&amp;recordname=RecordName&amp;recordtype=RecordType&amp;resolverip=ResolverIP
-  tags: DNS
+  baseURL: :///
+  tags: Amazon Web Services, DNS, API Service Provider, API Service Provider, API
+    Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-route-53/master/_listings/aws-route-53/20130401testdnsanswerampedns0clientsubnetipedns0clientsubnetipampedns0clientsubnetmaskedns0clientsubnetmaskhostedzoneidhostedzoneidamprecordnamerecordnameamprecordtyperecordtypeampresolveripresolverip-get-openapi.md
-- name: AWS Route 53 API Update Health Check
-  x-api-slug: aws-route-53-api
+- name: AWS Route 53 API - Update Health Check
+  x-api-slug: 20130401healthcheckhealthcheckid-post
   description: Updates an existing health check.Send a POST request to the /2013-04-01/healthcheck/health
     check ID             resource. Therequest body must include a document with an
     UpdateHealthCheckRequestelement. For more information about updating health checks,
@@ -857,36 +901,39 @@ apis:
     Guide.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Networking_AmazonRoute53.png
   humanURL: https://aws.amazon.com/route53/
-  baseURL: ://///2013-04-01/healthcheck/HealthCheckId
-  tags: Checks,Health
+  baseURL: :///
+  tags: Amazon Web Services, DNS, API Service Provider, API Service Provider, API
+    Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-route-53/master/_listings/aws-route-53/20130401healthcheckhealthcheckid-post-openapi.md
-- name: AWS Route 53 API Update Hosted Zone Comment
-  x-api-slug: aws-route-53-api
+- name: AWS Route 53 API - Update Hosted Zone Comment
+  x-api-slug: 20130401hostedzoneid-post
   description: Updates the hosted zone comment. Send a POST request to the/2013-04-01/hostedzone/hosted
     zone ID             resource.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Networking_AmazonRoute53.png
   humanURL: https://aws.amazon.com/route53/
-  baseURL: ://///2013-04-01/hostedzone/Id
-  tags: Hosted Zones
+  baseURL: :///
+  tags: Amazon Web Services, DNS, API Service Provider, API Service Provider, API
+    Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-route-53/master/_listings/aws-route-53/20130401hostedzoneid-post-openapi.md
-- name: AWS Route 53 API Update Traffic Policy Comment
-  x-api-slug: aws-route-53-api
+- name: AWS Route 53 API - Update Traffic Policy Comment
+  x-api-slug: 20130401trafficpolicyidversion-post
   description: Updates the comment for a specified traffic policy version.Send a POST
     request to the /2013-04-01/trafficpolicy/ resource.The request body must include
     a document with anUpdateTrafficPolicyCommentRequest element.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Networking_AmazonRoute53.png
   humanURL: https://aws.amazon.com/route53/
-  baseURL: ://///2013-04-01/trafficpolicy/Id/Version
-  tags: Traffic Policies
+  baseURL: :///
+  tags: Amazon Web Services, DNS, API Service Provider, API Service Provider, API
+    Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-route-53/master/_listings/aws-route-53/20130401trafficpolicyidversion-post-openapi.md
-- name: AWS Route 53 API Update Traffic Policy Instance
-  x-api-slug: aws-route-53-api
+- name: AWS Route 53 API - Update Traffic Policy Instance
+  x-api-slug: 20130401trafficpolicyinstanceid-post
   description: Updates the resource record sets in a specified hosted zone that were
     created based onthe settings in a specified traffic policy version.Send a POST
     request to the /2013-04-01/trafficpolicyinstance/traffic policy ID            resource.
@@ -904,13 +951,14 @@ apis:
     resource record set name.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Networking_AmazonRoute53.png
   humanURL: https://aws.amazon.com/route53/
-  baseURL: ://///2013-04-01/trafficpolicyinstance/Id
-  tags: Traffic Policies
+  baseURL: :///
+  tags: Amazon Web Services, DNS, API Service Provider, API Service Provider, API
+    Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-route-53/master/_listings/aws-route-53/20130401trafficpolicyinstanceid-post-openapi.md
-- name: AWS Route 53 API List Traffic Policy Instances By Policy
-  x-api-slug: aws-route-53-api
+- name: AWS Route 53 API - List Traffic Policy Instances By Policy
+  x-api-slug: 20130401trafficpolicyinstancestrafficpolicyamphostedzoneidhostedzoneidmarkeridtrafficpolicyidampmaxitemsmaxitemsamptrafficpolicyinstancenametrafficpolicyinstancenamemarkeramptrafficpolicyinstancetypetrafficpolicyinstancetypemarker-get
   description: 'Gets information about the traffic policy instances that you created
     by using a specifytraffic policy version.NoteAfter you submit a CreateTrafficPolicyInstance
     or anUpdateTrafficPolicyInstance request, there''s a brief delay while Amazon
@@ -935,41 +983,17 @@ apis:
     are omittedfrom the response.'
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Networking_AmazonRoute53.png
   humanURL: https://aws.amazon.com/route53/
-  baseURL: ://///2013-04-01/trafficpolicyinstances/trafficpolicy&amp;hostedzoneid=HostedZoneIdMarker?id=TrafficPolicyId&amp;maxitems=MaxItems&amp;trafficpolicyinstancename=TrafficPolicyInstanceNameMarker&amp;trafficpolicyinstancetype=TrafficPolicyInstanceTypeMarker&
-  tags: Traffic Policies
+  baseURL: :///
+  tags: Amazon Web Services, DNS, API Service Provider, API Service Provider, API
+    Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-route-53/master/_listings/aws-route-53/20130401trafficpolicyinstancestrafficpolicyamphostedzoneidhostedzoneidmarkeridtrafficpolicyidampmaxitemsmaxitemsamptrafficpolicyinstancenametrafficpolicyinstancenamemarkeramptrafficpolicyinstancetypetrafficpolicyinstancetypemarker-get-openapi.md
-- name: AWS Route 53 API
-  x-api-slug: aws-route-53-api
-  description: Amazon Route 53 is a highly available and scalable cloud Domain Name
-    System (DNS) web service. It is designed to give developers and businesses an
-    extremely reliable and cost effective way to route end users to Internet applications
-    by translating names like www.example.com into the numeric IP addresses like 192.0.2.1
-    that computers use to connect to each other. Amazon Route 53 is fully compliant
-    with IPv6 as well.Amazon Route 53 effectively connects user requests to infrastructure
-    running in AWS &ndash; such as Amazon EC2 instances, Elastic Load Balancing load
-    balancers, or Amazon S3 buckets &ndash; and can also be used to route users to
-    infrastructure outside of AWS. You can use Amazon Route 53 to configure DNS health
-    checks to route traffic to healthy endpoints or to independently monitor the health
-    of your application and its endpoints. Amazon Route 53 Traffic Flow makes it easy
-    for you to manage traffic globally through a variety of routing types, including
-    Latency Based Routing, Geo DNS, and Weighted Round Robin&mdash;all of which can
-    be combined with DNS Failover in order to enable a variety of low-latency, fault-tolerant
-    architectures. Using Amazon Route 53 Traffic Flow&rsquo;s simple visual editor,
-    you can easily manage how your end-users are routed to your application&rsquo;s
-    endpoints&mdash;whether in a single AWS region or distributed around the globe.
-    Amazon Route 53 also offers Domain Name Registration &ndash; you can purchase
-    and manage domain names such as example.com and Amazon Route 53 will automatically
-    configure DNS settings for your domains.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Networking_AmazonRoute53.png
-  humanURL: https://aws.amazon.com/route53/
-  baseURL: :///
-  tags: AWS Route 53
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-route-53/master/_listings/aws-route-53/openapi.md
 x-common:
+- type: x-api-gallery
+  url: http://aws.rekognition.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://aws.route.53.stack.network
 - type: x-documentation
   url: http://docs.aws.amazon.com/Route53/latest/APIReference/
 - type: x-faq

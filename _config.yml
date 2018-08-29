@@ -4,7 +4,7 @@ url: aws-route-53.streamdata.gallery
 tag: AWS Route 53
 markdown: kramdown
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", ".DS_Store"]
-github_user: streamdata-gallery-entities
+github_user: streamdata-gallery-topics
 github_repo: aws-route-53
 github_branch: master
 collections:
